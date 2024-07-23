@@ -54,11 +54,6 @@ struct node* deleteWithValue(struct node* head,int value){
         head = deleteFirstNode(head);
         return head;
     } 
-    if(temp2->data==value){
-        temp1->next = temp2->next;
-        free(temp2);
-        return head;
-    }
     while(temp2->data != value){
         temp1 = temp1->next;
         temp2 = temp2->next;
