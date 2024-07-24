@@ -45,6 +45,7 @@ void traversal(struct node *front){
         cout<<"Element is: "<<front->data<<endl;
         front = front->next;
     }
+    
 }
 
 void dequeue(struct node **front){
