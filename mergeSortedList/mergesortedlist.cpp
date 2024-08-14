@@ -21,8 +21,10 @@ struct ListNode* mergeTwoList(struct ListNode *first, struct ListNode *second){
     struct ListNode *temp = (struct ListNode*)malloc(sizeof(struct ListNode));
     //first linked list item is smaller
     if(first->val<second->val){
-
+        temp = first;
+        first = first->next;
     }
+    
 }
 
 int main(){
